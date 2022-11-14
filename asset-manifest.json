@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/NoProxy-Server/static/css/main.5584cae4.css",
+    "main.js": "/NoProxy-Server/static/js/main.bb7f76db.js",
+    "static/js/787.c4e7f8f9.chunk.js": "/NoProxy-Server/static/js/787.c4e7f8f9.chunk.js",
+    "index.html": "/NoProxy-Server/index.html",
+    "main.5584cae4.css.map": "/NoProxy-Server/static/css/main.5584cae4.css.map",
+    "main.bb7f76db.js.map": "/NoProxy-Server/static/js/main.bb7f76db.js.map",
+    "787.c4e7f8f9.chunk.js.map": "/NoProxy-Server/static/js/787.c4e7f8f9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5584cae4.css",
+    "static/js/main.bb7f76db.js"
+  ]
+}
