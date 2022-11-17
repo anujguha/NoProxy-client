@@ -2,7 +2,7 @@ import './App.css';
 import React from 'react';
 import Faculty from './component/faculty';
 import Student from './component/student';
-import Navbar from './component/navbar';
+import Homepage from './component/homepage';
 import Details from './component/details';
 
 
@@ -18,7 +18,7 @@ function App() {
       <Router>
         <div className='Container'>
           <Routes>
-            <Route exact path='/' element={<Navbar />}></Route>
+            <Route exact path='/' element={<Homepage />}></Route>
             <Route exact path='/faculty' element={<Faculty />}></Route>
             <Route exact path='/student' element={<Student />}></Route>
             <Route exact path='/details' element={<Details />}></Route>

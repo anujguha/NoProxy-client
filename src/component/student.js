@@ -1,5 +1,7 @@
-import React from "react";
+import React  from "react";
 import io from 'socket.io-client';
+import './style.css';
+import { Link } from "react-router-dom";
 
 
 
@@ -9,7 +11,7 @@ const socket = io.connect('http://localhost:5001');
 function Student() {
     let classvalue  = "";
     let uservalue = "";
-
+    
     function fetchpost(){
     fetch('/student',{
         method: 'POST',
@@ -51,10 +53,16 @@ function Student() {
 
     return (
         <div className='Navbar'>
-            <h1>NoProxy!</h1>
-            <div className="box4"><button className="getdetail">Get Details </button></div>
+            <div className="navbar">
+                <ul className="nav-list">
+                    <li><Link className="element" to='/'><b>Home</b></Link></li>
+                    <li><Link className="element" to='/faculty'><b>Faculty</b></Link></li>
+                    <li><Link className="element" to='/student'><b>Student</b></Link></li>
+                </ul>
+            </div>
+            <div className="box4"><h1 className="getdetail">NoProxy</h1> </div>
             <div className="box3" id="form">
-                <h4>Enter Enrollment no.</h4>
+            <img className='image-box' src='./assets/attendance.png.jpg' alt=''></img>
                 <div >
                     <input type="text" placeholder="Enrollment No." className="input-box" id="input" onChange={getInputValue} >
                     </input>
@@ -64,7 +72,7 @@ function Student() {
                     </input>
                 </div>
                 <div >
-                    <button type="submit" value="submit" onClick={ senddata}  className="input-box" >
+                    <button type="submit" value="submit" onClick={ senddata}  className="input-box" id="subbutton">
                         <h2>Submit</h2>
                     </button>
                 </div>
